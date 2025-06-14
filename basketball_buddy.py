@@ -1,5 +1,4 @@
-# Basketball AI Chatbot
-# A complete system with NLP understanding, live data fetching, and web interface
+
 
 import streamlit as st
 import requests
@@ -15,9 +14,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 import pickle
 import os
 
-# ============================================================================
-# Configuration and Constants
-# ============================================================================
 
 API_BASE_URL = "https://www.balldontlie.io/api/v1"
 CACHE_DURATION = 300  # 5 minutes cache
@@ -49,9 +45,7 @@ BASKETBALL_KNOWLEDGE = {
     }
 }
 
-# ============================================================================
-# Neural Network-based NLP Intent Classifier
-# ============================================================================
+
 
 class BasketballNLP:
     def __init__(self):
@@ -191,9 +185,7 @@ class BasketballNLP:
         
         return entities
 
-# ============================================================================
-# Basketball API Handler
-# ============================================================================
+
 
 class BasketballAPI:
     def __init__(self):
@@ -253,9 +245,7 @@ class BasketballAPI:
         data = self._make_request("games", params)
         return data.get('data', []) if data else []
 
-# ============================================================================
-# Chatbot Response Generator
-# ============================================================================
+
 
 class BasketballChatbot:
     def __init__(self):
@@ -438,9 +428,7 @@ Ask me about specific rules, positions, or basketball terms for more detailed in
 
 What would you like to know about basketball?"""
 
-# ============================================================================
-# Streamlit Web Interface
-# ============================================================================
+
 
 def main():
     st.set_page_config(
