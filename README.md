@@ -3,7 +3,7 @@
 An AI-powered chatbot that answers questions about NBA players, teams, and basketball rules.
 
 ## Demo
-![Basketball Chatbot Interface](img (1).png)
+![Basketball Chatbot Interface](img(1).png)
 
 ## Features
 - Player stats and information
